@@ -1,0 +1,87 @@
+---
+configure_dotfiles: false
+configure_terminal: true
+configure_osx: true
+
+configure_dock: true
+dockitems_remove: 
+- Launchpad
+- TV
+- Podcasts
+- 'App Store'
+- Safari
+- Mail
+- Maps
+- Photos
+- Facetime
+- Calendar
+- Contacts
+- Reminders
+- Notes
+- Freeform
+- Music
+- News
+- 'System Settings'
+
+dockitems_persist:
+# 1 is finder
+# 2 is the Terminal app of choice
+
+- name: "Microsoft Edge"
+  path: "/Applications/Microsoft Edge.app"
+  pos: 3
+
+- name: "Sublime Text"
+  path: "/Applications/Sublime Text.app/"
+  pos: 4
+
+configure_sudoers: false
+
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - curl
+  - git
+  - gh #GitHub Command Line Tool
+  - go
+  - ssh-copy-id
+  - openssl
+  - wget
+  - zsh-history-substring-search
+  - rustup # Rust installer (and version handler?)
+  - starship
+  - vim
+  - nano
+  - tailscale
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - microsoft-edge
+  - google-chrome
+  - sublime-text
+  - visual-studio-code
+  - discord
+  - obsidian
+  - citrix-workspace # As much as I'd prefer not, having work accessible is probably good
+  - font-jetbrains-mono-nerd-font
+  - warp
+
+configure_sublime: true
+sublime_base_path: "~/Library/Application Support/Sublime Text"
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "Dockerfile Syntax Highlighting"
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Jinja2"
+  - "Package Control"
+  - "Pretty JSON"
+  - "SublimeLinter"
+  - "SublimeLinter-mdl" # Markdown Lint
+  - "SublimeLinter-annotations" # TODO and FIXME support
+  - "SublimeLinter-contrib-yamllint"
+  - "Theme - Cobalt2" # Geerling's preferred theme
+  - "Predawn" # Theme - Seems pretty good
+  - "Materialize" # Theme - Many options
+  - "TrailingSpaces"
+  - "WordingStatus"
