@@ -1,5 +1,5 @@
 ---
-configure_dotfiles: false
+configure_dotfiles: true
 configure_terminal: true
 configure_osx: true
 
